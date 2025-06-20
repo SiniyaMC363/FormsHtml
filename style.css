@@ -1,0 +1,110 @@
+body {
+   background: #556fed;
+    background: radial-gradient(circle, rgba(85, 111, 237, 1) 0%, rgba(113, 108, 218, 1) 17%, rgba(137, 105, 201, 1) 32%, rgba(247, 94, 125, 1) 100%);
+
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+form {
+    width: 500px;
+}
+
+fieldset {
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+legend {
+    font-weight: 900px;
+}
+
+input[required] {
+    border: 2px solid black;
+}
+
+input:focus {
+    background-color: rgb(165, 165, 165);
+}
+
+input + p {
+    display: none;
+}
+
+input:hover + p {
+    display: inline;
+    background-color: rgb(194, 196, 196);
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 100;
+    font-size: 13px;
+}
+
+input[type="radio"]:checked {
+    height: 18px;
+    width: 18px;
+    
+}
+
+input[type="radio"]:checked + label {
+    font-size: 20px;
+}
+
+select {
+    background-color: rgb(246, 214, 214);
+    font-weight: 400;
+    font-size:small;
+}
+
+input[type="file"] {
+    background-color: rgb(246, 214, 214);
+}
+
+input[type="checkbox"]:checked {
+    height: 18px;
+    width: 18px;
+}
+
+textarea {
+    resize: none;
+}
+
+input[type="email"] ~ img {
+    display: none;
+}
+
+input[type="email"]:focus:valid ~ img#correct {
+    display: inline;
+    height: 20px;
+    width: 20px;
+    
+}
+
+input[type="email"]:focus:invalid ~ img#wrong {
+    display: inline;
+    height: 20px;
+    width: 20px;
+   
+}
+
+
+
+
+input[type="number"] ~ img {
+    display: none;
+}
+
+input[type="number"]:focus:out-of-range~img#wrong {
+    display: inline;
+    height: 20px;
+    width: 20px;
+   
+}
+
+input[type="number"]:focus:in-range~img#correct {
+    display: inline;
+    height: 20px;
+    width: 20px;
+    
+}
+
+
+
